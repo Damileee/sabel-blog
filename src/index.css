@@ -7,21 +7,20 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 2rem 0rem;
+  margin: 1rem 3rem 0rem 1.5rem;
   align-items: center;
 }
 nav .first-link {
   display: flex;
   gap: 1rem;
-  padding-top: 1xrem;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
 .first-link a {
   text-decoration: none;
-  padding: 0.3rem;
   color: #000000;
+  padding: 0.2rem;
 }
 a:hover {
   background-color: #FF7C65;
@@ -54,8 +53,48 @@ a:hover {
   padding: 1.5rem;
   border-radius: 2px;
   border: 1px solid #8E8E8E;
-  margin: auto;
+  margin: 6rem auto;
   width: 100%;
-  max-width: 28rem;
-  min-height: 75vh;
+  max-width: 25rem;
+  min-height: 65vh;
+}
+
+/* Sign-In Form */
+.input-container {
+  position: relative;
+  margin: 20px;
+  width: 220px; /* Adjust width as needed */
+  --x: 15px;
+  --y: 7px;
+}
+
+.input-field {
+  width: 100%;
+  padding: var(--y) var(--x);
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none; /* Remove the default input outline */
+}
+
+.input-label {
+  position: absolute;
+  top: calc(var(--y) + 7px);
+  left: var(--x);
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+  color: #8E8E8E;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+  top: calc(var(--y) * -0);
+  font-size: 12px;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 0 2px;
+}
+.input-field:focus {
+  outline: 1px solid#000000;
 }
