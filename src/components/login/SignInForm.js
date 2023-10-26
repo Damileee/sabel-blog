@@ -4,9 +4,13 @@ import Input from "../forms/Input";
 import GoogleIcon from "../svg/GoogleIcon.svg";
 
 const SignInForm = () => {
-  const [isSignInButtonProcessing, setIsSignInButtonProcessing] = useState(false);
-  const [isGoogleButtonProcessing, setIsGoogleButtonProcessing] = useState(false);
-  
+  const [isSignInButtonProcessing, setIsSignInButtonProcessing] =
+    useState(false);
+  const [isGoogleButtonProcessing, setIsGoogleButtonProcessing] =
+    useState(false);
+  const [isFacebookButtonProcessing, setIsFacebookButtonProcessing] =
+    useState(false);
+
   const handleSignInSubmit = async (e) => {
     e.preventDefault();
     setIsSignInButtonProcessing(true);
@@ -22,6 +26,15 @@ const SignInForm = () => {
     // Handle your "Submit with Google" logic here
     setTimeout(() => {
       setIsGoogleButtonProcessing(false);
+    }, 2000);
+  };
+
+  const handleFacebookSubmit = async (e) => {
+    e.preventDefault();
+    setIsFacebookButtonProcessing(true);
+    // Handle your "Submit with Facebook" logic here
+    setTimeout(() => {
+      setIsFacebookButtonProcessing(false);
     }, 2000);
   };
 
@@ -58,17 +71,16 @@ const SignInForm = () => {
               className="custom-button"
             />
           </div>
+          <div className="center-container">
+            <div className="left-line"></div>
+            <div className="or-text">OR</div>
+            <div className="right-line"></div>
+          </div>
         </form>
-
-        <div className="center-container">
-          <div className="left-line"></div>
-          <div className="or-text">OR</div>
-          <div className="right-line"></div>
-        </div>
         <div className="plain-button">
           <form onSubmit={handleGoogleSubmit}>
             <Button
-              label="Continue with Google"
+              label="CONTINUE WITH GOOGLE"
               type="submit"
               isDisabled={isGoogleButtonProcessing}
               isProcessing={isGoogleButtonProcessing}
@@ -77,7 +89,21 @@ const SignInForm = () => {
               <GoogleIcon />
             </Button>
           </form>
+          <form onSubmit={handleFacebookSubmit}>
+            <Button
+              label="CONTINUE WITH FACEBOOK"
+              type="submit"
+              isDisabled={isFacebookButtonProcessing}
+              isProcessing={isFacebookButtonProcessing}
+              className="custom-button facebook-button"
+            >
+              <GoogleIcon />
+            </Button>
+          </form>
         </div>
+        <div>
+        <span className="sign-up-suggestion">Don’t have an account? <a className="sign-up-link" href="/">Click Here</a></span>
+      </div>
       </div>
     </div>
   );
