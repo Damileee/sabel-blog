@@ -22,7 +22,7 @@ nav .first-link {
   color: #000000;
   padding: 0.2rem 0.4rem;
 }
-a:hover {
+.first-link a:hover {
   background-color: #FF7C65;
   color: #FFFFFF;
   border-radius: 0.3rem;
@@ -53,7 +53,7 @@ a:hover {
   margin: 3rem auto;
   width: 100%;
   max-width: 22rem;
-  min-height: 65vh;
+  min-height: 69vh;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -165,8 +165,14 @@ button {
   background: #FF7C65;
   font-family: 'Didact Gothic', sans-serif;
 }
-.plain-button {
+.plain-button button {
   margin: 0px;
+  background: #FFF;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1.5px solid#DCDCDC;
+  text-align: left;
 }
 
 button.disabled {
@@ -241,3 +247,15 @@ button:hover {
   }
 }
 
+/* Sign Up Link */
+
+.sign-up-link {
+  text-decoration: none;
+  color: #FF7C65;
+  font-size: 14px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+.sign-up-suggestion {
+  font-size: 14px;
+  font-family: 'Didact Gothic', sans-serif;
+}
