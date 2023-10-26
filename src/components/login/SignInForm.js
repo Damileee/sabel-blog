@@ -1,25 +1,28 @@
 import React, { useState } from "react";
 import Button from "../forms/Button";
 import Input from "../forms/Input";
+import GoogleIcon from "../svg/GoogleIcon.svg";
 
 const SignInForm = () => {
-  const [isButtonProcessing, setIsButtonProcessing] = useState(false);
-  const isButtonDisabled = isButtonProcessing;
-
-  const handleFormSubmit = async (e) => {
+  const [isSignInButtonProcessing, setIsSignInButtonProcessing] = useState(false);
+  const [isGoogleButtonProcessing, setIsGoogleButtonProcessing] = useState(false);
+  
+  const handleSignInSubmit = async (e) => {
     e.preventDefault();
-    console.log(e);
-
-    // Handle your form submission logic here
-    setIsButtonProcessing(true);
-
-    // Simulate some asynchronous operation, e.g., making an API request
-    // Replace this with your actual asynchronous operation
-    // For this example, I'll simulate a 2-second operation
+    setIsSignInButtonProcessing(true);
+    // Handle your "Sign In" form submission logic here
     setTimeout(() => {
-      // After the operation is done, set isButtonProcessing to false
-      setIsButtonProcessing(false);
-    }, 2000); // Simulate a 2-second operation
+      setIsSignInButtonProcessing(false);
+    }, 2000);
+  };
+
+  const handleGoogleSubmit = async (e) => {
+    e.preventDefault();
+    setIsGoogleButtonProcessing(true);
+    // Handle your "Submit with Google" logic here
+    setTimeout(() => {
+      setIsGoogleButtonProcessing(false);
+    }, 2000);
   };
 
   return (
@@ -29,7 +32,7 @@ const SignInForm = () => {
         <span>Welcome Back, please login below</span>
       </div>
       <div className="sign-in-form">
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleSignInSubmit}>
           <div>
             <Input
               label="Email Address"
@@ -49,13 +52,32 @@ const SignInForm = () => {
           <div>
             <Button
               label="SIGN IN"
-              type="submit" // i'm Using type="submit" to trigger form submission
-              isDisabled={isButtonDisabled}
-              isProcessing={isButtonProcessing}
+              type="submit"
+              isDisabled={isSignInButtonProcessing}
+              isProcessing={isSignInButtonProcessing}
               className="custom-button"
             />
           </div>
         </form>
+
+        <div className="center-container">
+          <div className="left-line"></div>
+          <div className="or-text">OR</div>
+          <div className="right-line"></div>
+        </div>
+        <div className="plain-button">
+          <form onSubmit={handleGoogleSubmit}>
+            <Button
+              label="Continue with Google"
+              type="submit"
+              isDisabled={isGoogleButtonProcessing}
+              isProcessing={isGoogleButtonProcessing}
+              className="custom-button google-button"
+            >
+              <GoogleIcon />
+            </Button>
+          </form>
+        </div>
       </div>
     </div>
   );
