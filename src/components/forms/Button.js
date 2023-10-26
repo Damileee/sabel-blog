@@ -1,7 +1,7 @@
 import { useState } from "react";
 import RingLoader from "../RingLoader";
 
-const Button = ({ label, onClick, type, className, isDisabled, isProcessing }) => {
+const Button = ({ label, onClick, type, className, isDisabled, isProcessing, icon }) => {
   const [loading, setLoading] = useState(false);
 
   const handleClick = async () => {
@@ -22,7 +22,12 @@ const Button = ({ label, onClick, type, className, isDisabled, isProcessing }) =
         disabled={isDisabled || loading || isProcessing}
         onClick={handleClick}
       >
-        {loading || isProcessing ? <RingLoader /> : label}
+        {loading || isProcessing ? <RingLoader /> : (
+          <>
+            {icon && <span className="button-icon">{icon}</span>}
+            {label}
+          </>
+        )}
       </button>
     </div>
   );
