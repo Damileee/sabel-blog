@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../forms/Button";
 import Input from "../forms/Input";
-import GoogleIcon from "../svg/GoogleIcon.svg";
+import GoogleIcon from "../svg/google.png";
 
 const SignInForm = () => {
   const [isSignInButtonProcessing, setIsSignInButtonProcessing] =
@@ -79,15 +79,14 @@ const SignInForm = () => {
         </form>
         <div className="plain-button">
           <form onSubmit={handleGoogleSubmit}>
-            <Button
-              label="CONTINUE WITH GOOGLE"
-              type="submit"
-              isDisabled={isGoogleButtonProcessing}
-              isProcessing={isGoogleButtonProcessing}
-              className="custom-button google-button"
-            >
-              <GoogleIcon />
-            </Button>
+          <Button
+            label="CONTINUE WITH GOOGLE"
+            type="submit"
+            isDisabled={isGoogleButtonProcessing}
+            isProcessing={isGoogleButtonProcessing}
+            className="custom-button google-button"
+            icon={<img src={GoogleIcon} alt="Google Icon" />}
+          />
           </form>
           <form onSubmit={handleFacebookSubmit}>
             <Button
@@ -97,7 +96,6 @@ const SignInForm = () => {
               isProcessing={isFacebookButtonProcessing}
               className="custom-button facebook-button"
             >
-              <GoogleIcon />
             </Button>
           </form>
         </div>
