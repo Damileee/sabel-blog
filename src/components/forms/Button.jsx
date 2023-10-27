@@ -1,6 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import RingLoader from "../RingLoader";
-// import GoogleIcon from "./svg/GoogleIcon.svg";
 
 const Button = ({ label, onClick, type, className, isDisabled, isProcessing, icon }) => {
   const [loading, setLoading] = useState(false);
@@ -22,7 +21,6 @@ const Button = ({ label, onClick, type, className, isDisabled, isProcessing, ico
         className={buttonClasses}
         disabled={isDisabled || loading || isProcessing}
         onClick={handleClick}
-        icon={icon}
       >
         {loading || isProcessing ? <RingLoader /> : (
           <>
