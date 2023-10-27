@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import Button from "../forms/Button";
 import Input from "../forms/Input";
-import GoogleIcon from "../svg/google.png";
+import GoogleIcon from "../svg/GoogleIcon.svg";
+
+const MyLogo = () => {
+  return <img src={GoogleIcon} />;
+};
 
 const SignInForm = () => {
   const [isSignInButtonProcessing, setIsSignInButtonProcessing] =
@@ -79,14 +83,14 @@ const SignInForm = () => {
         </form>
         <div className="plain-button">
           <form onSubmit={handleGoogleSubmit}>
-          <Button
-            label="CONTINUE WITH GOOGLE"
-            type="submit"
-            isDisabled={isGoogleButtonProcessing}
-            isProcessing={isGoogleButtonProcessing}
-            className="custom-button google-button"
-            icon={<img src={GoogleIcon} alt="Google Icon" />}
-          />
+            <Button
+              label="CONTINUE WITH GOOGLE"
+              type="submit"
+              isDisabled={isGoogleButtonProcessing}
+              isProcessing={isGoogleButtonProcessing}
+              className="custom-button google-button"
+              icon={MyLogo}
+            />
           </form>
           <form onSubmit={handleFacebookSubmit}>
             <Button
@@ -95,13 +99,17 @@ const SignInForm = () => {
               isDisabled={isFacebookButtonProcessing}
               isProcessing={isFacebookButtonProcessing}
               className="custom-button facebook-button"
-            >
-            </Button>
+            ></Button>
           </form>
         </div>
         <div>
-        <span className="sign-up-suggestion">Don’t have an account? <a className="sign-up-link" href="/">Click Here</a></span>
-      </div>
+          <span className="sign-up-suggestion">
+            Don’t have an account?{" "}
+            <a className="sign-up-link" href="/">
+              Click Here
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   );
