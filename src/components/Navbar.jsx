@@ -13,7 +13,7 @@ const Navbar = () => {
       </nav>
       <div className="header">
         <h1>
-          S<span className="rotate">A</span>BEL
+          <span>S<span className="rotate">A</span>BEL</span>
         </h1>
         <p>The conscious glitterati</p>
       </div>
