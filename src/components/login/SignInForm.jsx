@@ -1,11 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../forms/Button";
 import Input from "../forms/Input";
-import GoogleIcon from "../svg/GoogleIcon.svg";
-
-const MyLogo = () => {
-  return <img src={GoogleIcon} />;
-};
+import GoogleIcon from "../svg/GoogleIcon";
+import FacebookIcon from "../svg/FacebookIcon";
 
 const SignInForm = () => {
   const [isSignInButtonProcessing, setIsSignInButtonProcessing] =
@@ -43,7 +41,7 @@ const SignInForm = () => {
   };
 
   return (
-    <div>
+    <div className="sign-in-container">
       <div className="sign-in-form-header">
         <h1>Sign In</h1>
         <span>Welcome Back, please login below</span>
@@ -88,8 +86,8 @@ const SignInForm = () => {
               type="submit"
               isDisabled={isGoogleButtonProcessing}
               isProcessing={isGoogleButtonProcessing}
-              className="custom-button google-button"
-              icon={MyLogo}
+              className="google-button"
+              icon={<GoogleIcon />}
             />
           </form>
           <form onSubmit={handleFacebookSubmit}>
@@ -98,16 +96,17 @@ const SignInForm = () => {
               type="submit"
               isDisabled={isFacebookButtonProcessing}
               isProcessing={isFacebookButtonProcessing}
-              className="custom-button facebook-button"
-            ></Button>
+              className="facebook-button"
+              icon={<FacebookIcon />}
+            />
           </form>
         </div>
-        <div>
-          <span className="sign-up-suggestion">
+        <div className="buttom-nav-cotainer">
+          <span className="sign-type-suggestion">
             Don’t have an account?{" "}
-            <a className="sign-up-link" href="/">
+            <Link to="/create-account" className="sign-up-link">
               Click Here
-            </a>
+            </Link>
           </span>
         </div>
       </div>
