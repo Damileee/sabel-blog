@@ -22,12 +22,19 @@ const Button = ({ label, onClick, type, className, isDisabled, isProcessing, ico
         disabled={isDisabled || loading || isProcessing}
         onClick={handleClick}
       >
-        {loading || isProcessing ? <RingLoader /> : (
-          <>
-            {icon && <span className="button-icon">{icon}</span>}
-            {label}
-          </>
-        )}
+        <div className="button-content">
+          {!loading && !isDisabled && !isProcessing && ( // Conditionally render icon and label
+            <div className="button-left">
+              <span className="button-icon">{icon}</span>
+              {label}
+            </div>
+          )}
+          {loading || isProcessing ? (
+            <div className="button-loader">
+              <RingLoader />
+            </div>
+          ) : null}
+        </div>
       </button>
     </div>
   );
