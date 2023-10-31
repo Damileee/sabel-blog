@@ -23,7 +23,7 @@ const Button = ({ label, onClick, type, className, isDisabled, isProcessing, ico
         onClick={handleClick}
       >
         <div className="button-content">
-          {!loading && !isDisabled && !isProcessing && ( // Conditionally render icon and label
+          {!loading && !isDisabled && !isProcessing && (
             <div className="button-left">
               <span className="button-icon">{icon}</span>
               {label}
