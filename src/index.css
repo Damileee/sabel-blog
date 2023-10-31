@@ -325,3 +325,58 @@ button:hover {
   transform: translateX(100%);
   transition: opacity 500ms, transform 500ms;
 }
+
+/* Page Nav */
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 5rem 0rem 2.5rem;
+}
+
+/* Footer */
+.footer-container-body,
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #F0FFDB;
+}
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0rem;
+  width: 520px;
+}
+.footer-input {
+  outline: none;
+  border: none;
+  background-color: #F0FFDB;
+  width: 30rem;
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+  color: #000000;
+}
+.footer-input::placeholder {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+}
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  border-bottom: 1.5px solid #000000;
+  margin-top: 3rem;
+}
+.footer-first-span {
+  font-size: 16px;
+  color: #8E8E8E;
+  margin: 1.5rem 0rem 0.5rem 0rem;
+  font-family: 'Jost', sans-serif;
+}
+.footer-second-span {
+  font-size: 36px;
+  line-height: 47.99px;
+  text-align: center;
+  /* font-family: "Playfair Display ", serif; */
+}
