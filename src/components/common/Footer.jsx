@@ -1,5 +1,5 @@
-import TypewriterIcon from "./svg/TypewriterIcon.svg";
-import ArrowbarIcon from "./svg/ArrowbarIcon.svg";
+import TypewriterIcon from "../svg/TypewriterIcon.svg";
+import ArrowbarIcon from "../svg/ArrowbarIcon.svg";
 const Footer = () => {
   return (
     <div className="footer-container-body">
@@ -26,13 +26,11 @@ const Footer = () => {
             </span>
           </div>
         </form>
-        <div>
-          <span>
+      </div>
+          <span className="footer-third-span">
             By subscribing to the Sabel’s newsletter, you agree to our{" "}
             <span>Terms of Service</span> and <span>Privacy Policy</span>.
           </span>
-        </div>
-      </div>
     </div>
   );
 };
