@@ -345,7 +345,7 @@ button:hover {
   background-color: #F0FFDB;
 }
 .footer-container {
-  margin: 3.5rem 0rem 0rem;
+  margin: 3rem 0rem 0rem;
   width: 520px;
 }
 .footer-input {
@@ -386,4 +386,7 @@ button:hover {
   color: #8E8E8E;
   margin-top: 0.7rem;
   margin-bottom: 3rem;
+}
+.about-img {
+  width: 100%;
 }
