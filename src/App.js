@@ -1,19 +1,15 @@
-import './index.css';
-import Navbar from './components/Navbar';
-import Auth from './layout/Auth';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Form from "./router";
 
 function App() {
   return (
     <div className="App">
       <div className="content">
-      <Navbar />
-      <Header />
-      <div>
-        <Auth />
-      </div>
-      <Footer />
+        <Navbar />
+        <div>
+          <Form />
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
-import Form from "../components/login/Form";
+import Index from "../router";
 
 const Auth = () => {
   return (
     <div>
-      <Form />
+      <Index />
     </div>
   );
 };
