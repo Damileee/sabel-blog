@@ -8,7 +8,7 @@ const TransitionWrapper = ({ children, location }) => {
       <CSSTransition
         key={location.key}
         classNames="slide-fade"
-        // timeout={500}
+        timeout={500}
       >
         {children}
       </CSSTransition>
