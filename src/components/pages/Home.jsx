@@ -1,8 +1,12 @@
+import DefaultLayout from "../../layout/Default";
+
 const Home = () => {
     return (
-        <div>
-            Home-
-        </div>
+        <DefaultLayout>
+            <div>
+                <h1>This month’s finest</h1>
+            </div>
+        </DefaultLayout>
     );
 }
  
