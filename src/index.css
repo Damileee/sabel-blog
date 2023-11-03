@@ -398,7 +398,6 @@ button:hover {
 }
 .about_header_container {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
   text-align: center;

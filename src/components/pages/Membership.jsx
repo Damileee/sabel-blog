@@ -1,5 +1,6 @@
 import DefaultLayout from "../../layout/Default";
 import MembershipImg from "../../assets/images/membership-image.png"
+import Button from "../forms/Button";
 
 const Membership = () => {
   return (
@@ -28,9 +29,9 @@ const Membership = () => {
           <div>
           <span>Select a membership</span>
           <div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div><Button /></div>
+            <div><Button /></div>
+            <div><Button /></div>
           </div>
           </div>
       </div>
