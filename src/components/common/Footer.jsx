@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
           <span className="footer-third-span">
             By subscribing to the Sabel’s newsletter, you agree to our{" "}
-            <span>Terms of Service</span> and <span>Privacy Policy</span>.
+            <span className="footer-third-span_special">Terms of Service</span> and <span className="footer-third-span_special">Privacy Policy</span>.
           </span>
     </div>
   );
