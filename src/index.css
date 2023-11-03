@@ -369,22 +369,29 @@ button:hover {
   margin-top: 3rem;
 }
 .footer-first-span {
-  font-size: 16px;
+  font-size: 14.2px;
   color: #8E8E8E;
   margin: 1.5rem 0rem 0.5rem 0rem;
   font-family: 'Jost', sans-serif;
 }
 .footer-second-span {
-  font-size: 36px;
-  line-height: 47.99px;
+  font-size: 35px;
+  line-height: 40px;
   text-align: center;
-  /* font-family: "Playfair Display ", serif; */
+  font-family: "Playfair Display ", serif;
+  font-weight: 400;
 }
 .footer-third-span {
-  font-size: 13.5px;
+  font-size: 13px;
   color: #8E8E8E;
   margin-top: 0.7rem;
   margin-bottom: 3rem;
+  font-family: 'Jost', sans-serif;
+}
+.footer-third-span_special {
+  color: #000000;
+  font-weight: 400;
+  font-size: 13.3px;
 }
 .about-img {
   width: 100%;
@@ -416,4 +423,45 @@ button:hover {
   font-weight: 400;
   font-size: 17px;
   margin: 1.5rem 0;
+}
+.about_section_container .second_span {
+  font-size: 53px;
+  text-align: center;
+  max-width: 720px;
+  font-family: "Playfair Display ", serif;
+  margin-bottom: 2.3rem;
+}
+.fashion {
+  color: #FF7C65;
+  font-style: italic;
+}
+.ethical {
+  color: #009639;
+  font-style: italic;
+}
+.about_page_article {
+  max-width: 787px;
+  font-size: 17px;
+}
+.about_page_article p {
+  margin-bottom: 1.1rem;
+  font-family: 'Jost', sans-serif;
+}
+.refrence_container {
+  margin: 1.7rem 0 3rem 0;
+}
+.refrence {
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+
+}
+.refrence_special {
+  color: #ff7c65;
+}
+.refrence_name {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+  margin: 0.5rem 0 1rem 0;
 }
