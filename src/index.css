@@ -35,14 +35,14 @@ nav .first-link {
 }
 
 .header h1 {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 500;
   font-family: "Playfair Display SC", serif;
 }
 .rotate {
   transform: rotate(180deg);
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 .header p {
   font-family: 'Jost', sans-serif;
@@ -463,4 +463,46 @@ button:hover {
   font-size: 16px;
   font-family: 'Jost', sans-serif;
   margin: 0.5rem 0 1rem 0;
+}
+
+/* membership-page */
+
+.membership-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.membership-container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.membership-container article {
+  line-height: 24px;
+}
+.membership-container article p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Jost', sans-serif;
+}
+.membership-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.membership-card span {
+  font-size: 24px;
+  font-family: "Playfair Display ", serif;
+}
+.selection-card {
+  display: flex;
 }
