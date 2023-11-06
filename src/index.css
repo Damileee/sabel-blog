@@ -8,7 +8,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin: 0rem 5rem 0rem 2rem;
+  margin: 0rem 2.5rem 0rem 2rem;
   align-items: center;
 }
 nav .first-link {
@@ -331,7 +331,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.8rem 5rem 3rem 2.5rem;
+  margin: 1.8rem 2.5rem 3rem 2.5rem;
 }
 
 /* Footer */
@@ -505,4 +505,17 @@ button:hover {
 }
 .selection-card {
   display: flex;
+}
+
+/* Home Page */
+.home_page-container {
+  margin: 0 0rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.home_page_img-container {
+  max-width: 97%;
 }
