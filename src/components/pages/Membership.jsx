@@ -36,10 +36,7 @@ const Membership = () => {
           </p>
         </article>
         <div className="membership-img">
-        <img
-          src={MembershipImg}
-          alt="Lady painting picture"
-        />
+          <img src={MembershipImg} alt="Lady painting" />
         </div>
         <div className="membership-card">
           <span>Select a membership</span>
