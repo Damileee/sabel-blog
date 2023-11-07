@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div>
         <h2>Title goes here</h2>
-        <div>
+        <div className="home_page-first-span">
         <span>Photography by Peter Jordanov</span>
         </div>
         <span>
