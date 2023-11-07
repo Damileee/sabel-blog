@@ -47,6 +47,7 @@ const Home = () => {
           label="READ MORE" 
           />
         </div>
+      </div>
     </DefaultLayout>
   );
 };
