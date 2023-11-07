@@ -509,16 +509,14 @@ button:hover {
 
 /* Home Page */
 .home_page-container {
-  margin: 0 0rem 0 2rem;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.home_page_img-container {
-  max-width: 97.7%;
-}
+
 .home_page-container h1 {
   font-weight: 400;
   font-size: 50px;
@@ -530,4 +528,20 @@ button:hover {
   font-size: 44px;
   font-family: "Playfair Display ", serif;
   margin: 2rem 0 1rem;
+}
+.home_page-first-span {
+  font-size: 17.5px;
+  font-family: "Playfair Display ", serif;
+  margin-bottom: 1.7rem;
+}
+.home_page-second-span {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 2.5rem;
+}
+.home_page-img-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
