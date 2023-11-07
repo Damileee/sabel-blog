@@ -517,5 +517,17 @@ button:hover {
   overflow: hidden;
 }
 .home_page_img-container {
-  max-width: 97%;
+  max-width: 97.7%;
+}
+.home_page-container h1 {
+  font-weight: 400;
+  font-size: 50px;
+  font-family: "Playfair Display ", serif;
+  margin-bottom: 2.2rem;
+}
+.home_page-container h2 {
+  font-weight: 400;
+  font-size: 44px;
+  font-family: "Playfair Display ", serif;
+  margin: 2rem 0 1rem;
 }
