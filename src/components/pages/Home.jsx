@@ -14,8 +14,11 @@ const Home = () => {
         <div>
           <img src={FirstImg} alt="" className="home_page_img-container" />
         </div>
+        <div>
         <h2>Title goes here</h2>
+        <div>
         <span>Photography by Peter Jordanov</span>
+        </div>
         <span>
           Sustainable fashion is not just a trend, it is a movement that is
           changing the way we think about fashion. It is a movement that is
@@ -25,13 +28,14 @@ const Home = () => {
           fashion is not only beautiful, but also sustainable and ethical ...
           Read More
         </span>
+        </div>
         <div>
           <img src={FlexImgOne} alt="" />
           <img src={FlexImgTwo} alt="" />
           <img src={FlexImgThree} alt="" />
         </div>
         <div>
-          <img src={SecondImg} alt="" />
+          <img src={SecondImg} alt="" className="home_page_img-container" />
         </div>
         <div>
           <span>Take my blues away</span>
@@ -43,6 +47,7 @@ const Home = () => {
           label="READ MORE" 
           />
         </div>
+      </div>
     </DefaultLayout>
   );
 };
