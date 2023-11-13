@@ -12,7 +12,7 @@ const Home = () => {
       <div className="home_page-container">
         <h1>This month’s finest</h1>
         <div className="home_page_img-container">
-          <img src={FirstImg} alt=""/>
+          <img src={FirstImg} alt="" />
         </div>
         <div>
           <h2>Title goes here</h2>
@@ -38,17 +38,21 @@ const Home = () => {
           <img src={FlexImgThree} alt="" />
         </div>
         <div className="home_page_img-container">
-          <img src={SecondImg} alt=""/>
+          <img src={SecondImg} alt="" />
         </div>
-        <div>
+        <div className="home_page-third-span">
           <span>Take my blues away</span>
-          <span>Photography by Peter Jordanov Interview by Isabelle Zeuch</span>
+          <span>Photography by Peter Jordanov</span>{" "}
+          <span>Interview by Isabelle Zeuch</span>
           <span>
             Lebanese renaissance woman HALA MOAWAD creates one-off leather
-            garments from fleamarket pieces and appliquéd off-cuts. She gives
-            these pieces a new life, rising out of the remnants like a phoenix
-            from the flames.
+            garments from{" "}
           </span>
+          <span>
+            fleamarket pieces and appliquéd off-cuts. She gives these pieces a
+            new life, rising out of
+          </span>{" "}
+          <span>the remnants like a phoenix from the flames.</span>
         </div>
         <div>
           <Button label="READ MORE" />
