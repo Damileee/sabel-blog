@@ -41,21 +41,23 @@ const Home = () => {
           <img src={SecondImg} alt="" />
         </div>
         <div className="home_page-third-span">
-          <span>Take my blues away</span>
+          <span className="home_page-third-span-first">Take my blues away</span>
+          <div className="home_page-third-span-second">
           <span>Photography by Peter Jordanov</span>{" "}
           <span>Interview by Isabelle Zeuch</span>
-          <span>
+          </div>
+          <span className="home_page-third-span-third">
             Lebanese renaissance woman HALA MOAWAD creates one-off leather
             garments from{" "}
           </span>
-          <span>
+          <span className="home_page-third-span-third">
             fleamarket pieces and appliquéd off-cuts. She gives these pieces a
             new life, rising out of
           </span>{" "}
-          <span>the remnants like a phoenix from the flames.</span>
-        </div>
+          <span className="home_page-third-span-third">the remnants like a phoenix from the flames.</span>
         <div>
           <Button label="READ MORE" />
+        </div>
         </div>
       </div>
     </DefaultLayout>
