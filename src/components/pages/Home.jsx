@@ -56,7 +56,10 @@ const Home = () => {
           </span>{" "}
           <span className="home_page-third-span-third">the remnants like a phoenix from the flames.</span>
         <div>
-          <Button label="READ MORE" />
+          <Button 
+          label="READ MORE"
+          className="homepage-button"
+          />
         </div>
         </div>
       </div>
