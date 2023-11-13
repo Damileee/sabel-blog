@@ -14,7 +14,7 @@
 nav .first-link {
   display: flex;
   gap: 1rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -45,7 +45,7 @@ nav .first-link {
   vertical-align: middle;
 }
 .header p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 11px;
   color: #8e8e8e;
 }
@@ -100,7 +100,7 @@ nav .first-link {
 .or-text {
   margin: 0 0.1px;
   font-size: 14px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 /* Sign-In Form */
@@ -117,7 +117,7 @@ nav .first-link {
 .sign-in-form-header span {
   font-weight: 400;
   font-size: 12px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .sign-in-form-header h1 {
   font-weight: 400;
@@ -147,7 +147,7 @@ nav .first-link {
   pointer-events: none;
   transition: 0.3s;
   color: #8e8e8e;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   text-align: center;
 }
@@ -183,7 +183,7 @@ button {
   padding: 0.7em;
   transition: all ease 0.3s;
   background: #ff7c65;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   cursor: pointer;
 }
 .custom-button {
@@ -286,11 +286,11 @@ button:hover {
   text-decoration: none;
   color: #ff7c65;
   font-size: 14px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .sign-type-suggestion {
   font-size: 14px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .buttom-nav-cotainer {
   margin: 0.7rem 0rem 1.2rem 0rem;
@@ -298,10 +298,9 @@ button:hover {
 .tc-container {
   display: flex;
   justify-content: center;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 11.5px;
 }
-
 
 /* Add these styles in your CSS file */
 .slide-fade-enter {
@@ -341,7 +340,7 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #F0FFDB;
+  background-color: #f0ffdb;
 }
 .footer-container {
   margin: 3rem 0rem 0rem;
@@ -350,16 +349,16 @@ button:hover {
 .footer-input {
   outline: none;
   border: none;
-  background-color: #F0FFDB;
+  background-color: #f0ffdb;
   width: 30rem;
   font-size: 15px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: #000000;
 }
 .footer-input::placeholder {
   color: #000000;
   font-size: 15px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .footer-form {
   display: flex;
@@ -370,9 +369,9 @@ button:hover {
 }
 .footer-first-span {
   font-size: 14.2px;
-  color: #8E8E8E;
+  color: #8e8e8e;
   margin: 1.5rem 0rem 0.5rem 0rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .footer-second-span {
   font-size: 35px;
@@ -383,10 +382,10 @@ button:hover {
 }
 .footer-third-span {
   font-size: 13px;
-  color: #8E8E8E;
+  color: #8e8e8e;
   margin-top: 0.7rem;
   margin-bottom: 3rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .footer-third-span_special {
   color: #000000;
@@ -410,8 +409,8 @@ button:hover {
 .about_header_container span {
   font-weight: 400;
   font-size: 15px;
-  color: #8E8E8E;
-  font-family: 'Jost', sans-serif;
+  color: #8e8e8e;
+  font-family: "Jost", sans-serif;
 }
 .about_section_container {
   display: flex;
@@ -431,7 +430,7 @@ button:hover {
   margin-bottom: 2.3rem;
 }
 .fashion {
-  color: #FF7C65;
+  color: #ff7c65;
   font-style: italic;
 }
 .ethical {
@@ -444,7 +443,7 @@ button:hover {
 }
 .about_page_article p {
   margin-bottom: 1.1rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .refrence_container {
   margin: 1.7rem 0 3rem 0;
@@ -453,7 +452,6 @@ button:hover {
   font-weight: 400;
   font-size: 30px;
   font-style: italic;
-
 }
 .refrence_special {
   color: #ff7c65;
@@ -461,7 +459,7 @@ button:hover {
 .refrence_name {
   font-weight: 400;
   font-size: 16px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   margin: 0.5rem 0 1rem 0;
 }
 
@@ -485,7 +483,7 @@ button:hover {
   margin-bottom: 1rem;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .membership-img {
   display: flex;
@@ -537,7 +535,7 @@ button:hover {
 .home_page-second-span {
   font-weight: 400;
   font-size: 18px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 2.5rem;
 }
 .home_page-img-container {
@@ -550,4 +548,26 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 1.5rem 0;
+}
+.home_page-third-span-first {
+  font-family: "Playfair Display ", serif;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.home_page-third-span-second {
+  font-family: "Playfair Display ", serif;
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.home_page-third-span-third {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
