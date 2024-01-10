@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 import Membership from "./components/pages/Membership";
 import Home from "./components/pages/Home";
 import TransitionWrapper from "./components/login/TransitionWrapper";
+import Profile from "./components/pages/Profile";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/about-page" component={About} />
               <Route path="/membership" component={Membership} />
+              <Route path="/profile" component={Profile} />
             </Switch>
           </div>
         </div>

@@ -39,6 +39,10 @@ nav .first-link {
   font-weight: 500;
   font-family: "Playfair Display SC", serif;
 }
+.header a {
+  text-decoration: none;
+  color: #000000;
+}
 .rotate {
   transform: rotate(180deg);
   display: inline-block;
