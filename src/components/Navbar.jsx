@@ -13,15 +13,17 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="header">
+        <Link to="/">
         <h1>
           <span>S<span className="rotate">A</span>BEL</span>
         </h1>
+        </Link>
         <p>The conscious glitterati</p>
       </div>
       <div className="icon-nav">
         <img src={SearchIcon} alt="Search Icon" />
         <img src={HeartIcon} alt="Heart Icon" />
-        <img src={UserIcon} alt="User Icon" />
+        <Link to="/profile"><img src={UserIcon} alt="User Icon" /></Link>
       </div>
     </div>
   );
